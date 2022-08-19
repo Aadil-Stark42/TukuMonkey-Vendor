@@ -1,0 +1,2 @@
+rootProject.name = "TukuMonkeyVendor"
+include ':app', ':graphkit'

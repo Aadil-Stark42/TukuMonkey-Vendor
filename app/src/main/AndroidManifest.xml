@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.tukumonkeyvendor">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="in.tukumonkeyvendor.utils.Application"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+
+        android:icon="@drawable/ic_logo"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/apptheme">
+        <activity android:name="in.tukumonkeyvendor.resetpasswordwithotp.ResetPasswordwithOTPActivity"/>
+        <activity android:name="in.tukumonkeyvendor.signup.SignupActivity"/>
+
+        <activity android:name="in.tukumonkeyvendor.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="in.tukumonkeyvendor.dashboard.BarGraphDisplayActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="in.tukumonkeyvendor.shoplist.OutletListWithSearchActivity"/>
+        <activity android:name="in.tukumonkeyvendor.shopoverview.OutletOverviewActivity"/>
+        <activity android:name="in.tukumonkeyvendor.productview.ProductviewActivity"/>
+        <activity android:name="in.tukumonkeyvendor.productlist.ProductListWithSearchActivity"/>
+        <activity android:name="in.tukumonkeyvendor.productview.ProductStatusActivity"/>
+        <activity android:name="in.tukumonkeyvendor.outletstatus.OutLetStatusUpdateActivity"/>
+        <activity android:name="in.tukumonkeyvendor.editoutlet.OutletEditActivity"/>
+        <activity android:name="in.tukumonkeyvendor.slotlist.SlotListActivity"/>
+        <activity android:name="in.tukumonkeyvendor.slot.SlotWeekdaysUpdateActivity"/>
+        <activity android:name="in.tukumonkeyvendor.slot.SlotEditActivity"/>
+        <activity android:name="in.tukumonkeyvendor.myearnings.MyEarningsActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="userPortrait"/>
+        <activity android:name="in.tukumonkeyvendor.topping.CreatetoppingCatActivity"/>
+        <activity android:name="in.tukumonkeyvendor.topping.ToppingListActivity"/>
+        <activity android:name="in.tukumonkeyvendor.getoptforemail.GetOtpforEmailActivity"/>
+        <activity android:name="in.tukumonkeyvendor.otp_Verification.OTPMobilenumVerificationActivity"/>
+        <activity android:name="in.tukumonkeyvendor.getotoformobilenum.GetOtoforMobileNumActivity"/>
+        <activity android:name="in.tukumonkeyvendor.notification.NotificationListActivity"/>
+        <activity android:name="in.tukumonkeyvendor.editprofile.EditProfileActivity"/>
+        <activity android:name="in.tukumonkeyvendor.settings.SettingsActivity"/>
+        <activity android:name="in.tukumonkeyvendor.orders.OrderOverviewActivity"/>
+        <activity android:name="in.tukumonkeyvendor.orders.OrdersListActivity"/>
+        <activity android:name="in.tukumonkeyvendor.dashboard.DashboardActivity"/>
+        <activity android:name="in.tukumonkeyvendor.addtoppings.AddToppingsActivity"/>
+        <activity android:name="in.tukumonkeyvendor.addvariants.AddvariantsActivity"/>
+        <activity android:name="in.tukumonkeyvendor.addnewproduct.AddNewProductDetails"/>
+        <activity android:name="in.tukumonkeyvendor.login.LoginActivity"/>
+        <activity android:name="in.tukumonkeyvendor.reenterpassword.ResetPwdwithNewActivity" />
+        <activity android:name="in.tukumonkeyvendor.updateproduct.UpdateProductActivity"/>
+        <activity android:name="in.tukumonkeyvendor.updatetstock.UpdateStockDetailActivity"/>
+        <activity android:name="in.tukumonkeyvendor.updatetopping.UpdateToppingActivity"/>
+        <activity android:name="in.tukumonkeyvendor.selectyourbusiness.SelectYourBusinessActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="userPortrait"/>
+        <activity android:name="in.tukumonkeyvendor.otp_Verification.OTPEmailVerificationActivity"
+            android:screenOrientation="userPortrait"/>
+        <activity android:name="in.tukumonkeyvendor.createoutlet.OutletActivity"
+            android:screenOrientation="userPortrait"/>
+        <activity android:name="in.tukumonkeyvendor.resetpassword.ResetPasswordActivity"
+            android:screenOrientation="userPortrait"/>
+        <activity android:name="in.tukumonkeyvendor.bankdetail.SuccessActivity"/>
+        <activity android:name="in.tukumonkeyvendor.bankdetail.BankDetailActivity"/>
+        <activity android:name="in.tukumonkeyvendor.bankdetail.AccountSelectionActivity"/>
+        <activity android:name="in.tukumonkeyvendor.addnewproductwithstock.AddToppingWithStockActivity"/>
+        <activity android:name="in.tukumonkeyvendor.addnewproductwithstock.AddVariantWIthStockActivity"/>
+        <activity android:name="in.tukumonkeyvendor.addnewproductwithstock.NewProductwithStockActivity"/>
+        <activity android:name="in.tukumonkeyvendor.slot.CreateSlotActivity"/>
+        <activity android:name="in.tukumonkeyvendor.productcategory.ProductCatListActivity"/>
+        <activity android:name="in.tukumonkeyvendor.productcategory.CreateProductCategoryActivity"/>
+        <activity android:name="in.tukumonkeyvendor.termsandcondition.TermsAndConditionActivity"/>
+        <activity android:name="in.tukumonkeyvendor.privacypolicy.PrivacyPolicyActivity"/>
+
+        <service
+            android:name="in.tukumonkeyvendor.pushnotification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
